@@ -4221,7 +4221,7 @@
             const end = (k, override) => {
                 if (override) return r(override);
                 const e = rules[k]; if (!e) return null;
-                if (Array.isArray(e)) return r(e.map(ee => s + ee));
+                if (Array.isArray(e)) return r(e.map(ee => ee ? s + ee : ''));
                 return [s + e]; // single string ending (inf, ger, ppres)
             };
             const endStr = (k) => Array.isArray(rules[k]) ? s + rules[k][0] : s + (rules[k] || "");
