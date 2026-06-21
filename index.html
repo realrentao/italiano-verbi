@@ -1696,6 +1696,8 @@
 
 
 
+    </script>
+    <div id="loadStatus" style="text-align:center;padding:20px;color:#888;font-size:0.9em;">⏳ 加载动词数据中...</div>
     <script>
 
         // ==================== VERB DATA ====================
@@ -16212,6 +16214,9 @@
 
 
 
+    </script>
+    <script>
+
         // ==================== MOOD GROUPS ====================
 
         const moodGroups = [
@@ -16321,6 +16326,10 @@
         // ==================== INIT ====================
 
         function init() {
+
+            // Hide loading indicator now that data is parsed
+            const loadStatus = document.getElementById('loadStatus');
+            if (loadStatus) loadStatus.style.display = 'none';
 
             fillAllVerbTenses();
 
