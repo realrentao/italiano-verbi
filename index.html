@@ -1766,17 +1766,36 @@
                     category: "规则动词 (-are)",
                     tags: ["regular"],
                     aux: "avere",
-                    features: "• 规则第一变位动词 (-are)<br>• 过去分词：abituato<br>• 自反形式 abituarsi a — 习惯于",
+                    features: "• 规则第一变位动词 (-are)<br>• 过去分词：abituato<br>• 及物动词，接直接宾语",
+                    examples: [
+                        {it: "L'ha abituato a mettere in ordine la sua camera prima di uscire.", cn: "她让他养成了出门前整理房间的习惯。"},
+                        {it: "I genitori abituano i figli alla disciplina.", cn: "父母让孩子们习惯于纪律。"},
+                        {it: "Abbiamo abituato il cane a stare da solo.", cn: "我们让狗习惯了独自待着。"},
+                    ],
+                    phrases: [
+                        "abituare qualcuno a — 让某人习惯于",
+                        "abituare un animale — 训练动物"
+                    ],
+                    tenses: {}
+                },
+                {
+                    infinito: "abituarsi",
+                    meaning: "习惯于；适应",
+                    category: "自反动词 (-arsi)",
+                    tags: ["regular","riflessivo"],
+                    aux: "essere",
+                    features: "• 自反动词<br>• 过去分词：abituato<br>• 助动词用 essere<br>• 常接 a + infinito",
                     examples: [
                         {it: "Mi abituo al nuovo clima.", cn: "我习惯新气候。"},
                         {it: "Si è abituato a lavorare qui.", cn: "他习惯了在这里工作。"},
                         {it: "Ti abituerai presto.", cn: "你很快就会习惯的。"},
-                        {it: "L'ha abituato a mettere in ordine la sua camera prima di uscire.", cn: "她让他养成了出门前整理房间的习惯。"},
-                        {it: "Dopo un anno mi sono abituato a questa città caotica.", cn: "一年后我习惯了这座混乱的城市。"}
+                        {it: "Dopo un anno mi sono abituato a questa città caotica.", cn: "一年后我习惯了这座混乱的城市。"},
+                        {it: "Ci siamo abituati al rumore.", cn: "我们习惯了噪音。"},
                     ],
                     phrases: [
                         "abituarsi a — 习惯于",
-                        "essere abituato a — 习惯于"
+                        "essere abituato a — 习惯于",
+                        "abituarsi all'idea — 接受/习惯于这个想法"
                     ],
                     tenses: {}
                 },
@@ -9375,6 +9394,7 @@
             "abbracciare": {type:"iare", stem:"abbracci", aux:"avere", pp:"abbracciato"},
             "abitare":    {type:"are", stem:"abit", aux:"avere", pp:"abitato"},
             "abituare":    {type:"are", stem:"abitu", aux:"avere", pp:"abituato"},
+            "abituarsi":    {type:"are-rfl", stem:"abitu", aux:"essere", pp:"abituato"},
             "accendere":  {type:"ere", stem:"accend", aux:"avere", pp:"acceso", rem:["accesi","accendesti","accese","accendemmo","accendeste","accesero"]},
             "accettare":  {type:"are", stem:"accett", aux:"avere", pp:"accettato"},
             "accogliere":   {type:"ere", stem:"accogli", aux:"avere", pp:"accolto", pres:["accolgo","accogli","accoglie","accogliamo","accogliete","accolgono"], rem:["accolsi","accogliesti","accolse","accogliemmo","accoglieste","accolsero"]},
