@@ -17117,41 +17117,23 @@
 
 
         function fillAllVerbTenses() {
+            // Lazily generate tenses only when needed — no-op at init time
+        }
 
-            for (const letter in verbData) {
-
-                verbData[letter].forEach(v => {
-
-                    const meta = VCONJ[v.infinito];
-
-                    if (!meta || meta.type === "irr") {
-
-                        // For irregular verbs, generate simple compound tenses from existing data
-
-                        if (v.tenses && v.tenses.presente && v.aux) {
-
-                            ensureCompounds(v);
-
-                        }
-
-                        return;
-
-                    }
-
-                    // Generate all tenses for this regular verb
-
-                    const tenses = conjVerbs(v.infinito, meta);
-
-                    if (tenses) {
-
-                        v.tenses = tenses;
-
-                    }
-
-                });
-
+        function ensureVerbTenses(v) {
+            if (!v || v._tensesReady) return;
+            const meta = VCONJ[v.infinito];
+            if (!meta || meta.type === "irr") {
+                // Irregular: fill compound tenses if missing
+                if (v.tenses && v.tenses.presente && v.aux) {
+                    ensureCompounds(v);
+                }
+            } else if (!v.tenses || Object.keys(v.tenses).length === 0) {
+                // Generate tenses for this verb on-demand
+                const tenses = conjVerbs(v.infinito, meta);
+                if (tenses) v.tenses = tenses;
             }
-
+            v._tensesReady = true;
         }
 
 
@@ -17580,13 +17562,12 @@
 
             currentVerb = verbData[l][idx];
 
-
+            // Generate tenses on-demand for the selected verb
+            ensureVerbTenses(currentVerb);
 
             document.querySelectorAll('.verb-item').forEach(i => i.classList.remove('active'));
 
             if (el) el.classList.add('active');
-
-
 
             renderConjugation();
 
