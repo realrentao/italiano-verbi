@@ -824,7 +824,11 @@
 
             border: 1px solid #D4C0EF;
 
-            font-weight: 700;
+            line-height: 1;
+
+            display: inline-flex;
+
+            align-items: center;
 
         }
 
@@ -3760,6 +3764,46 @@
                     phrases: [
                         'curare un paziente — 治疗病人',
                         'curare il giardino — 打理花园'
+                    ],
+                    tenses: {}
+                },
+                {
+                    infinito: "comparare",
+                    meaning: "比较；对比",
+                    category: "规则动词 (-are)",
+                    tags: ["regular"],
+                    aux: "avere",
+                    level: "A2",
+                    features: "• 规则第一变位动词 (-are)<br>• 过去分词：comparato<br>• 近义词：confrontare",
+                    examples: [
+                        {it: "Comparo i prezzi online.", cn: "我在网上比较价格。"},
+                        {it: "Ha comparato due offerte.", cn: "他比较了两个报价。"},
+                        {it: "Non compararmi con lui!", cn: "别拿我和他比！"}
+                    ],
+                    phrases: [
+                        "comparare prezzi — 比较价格",
+                        "comparare due cose — 比较两样东西",
+                        "comparare con — 与...比较"
+                    ],
+                    tenses: {}
+                },
+                {
+                    infinito: "compararsi",
+                    meaning: "与...相比；自比",
+                    category: "规则自反动词",
+                    tags: ["regular", "riflessivo"],
+                    aux: "essere",
+                    level: "B1",
+                    features: "• 自反动词<br>• 规则第一变位动词<br>• 助动词用 essere<br>• 接 a/con",
+                    examples: [
+                        {it: "Si compara sempre agli altri.", cn: "他总是和别人比较。"},
+                        {it: "Non compararti a me!", cn: "别拿你自己和我比！"},
+                        {it: "Mi sono comparato a mio fratello.", cn: "我和我兄弟比较了。"}
+                    ],
+                    phrases: [
+                        "compararsi a — 与...相比",
+                        "compararsi con — 与...比较",
+                        "sempre compararsi — 总是攀比"
                     ],
                     tenses: {}
                 },
@@ -6886,6 +6930,46 @@
                     ],
                     tenses: {}
                 },
+                {
+                    infinito: "prestare",
+                    meaning: "借出；出借",
+                    category: "规则动词 (-are)",
+                    tags: ["regular"],
+                    aux: "avere",
+                    level: "A2",
+                    features: "• 规则第一变位动词<br>• 过去分词：prestato<br>• 注意区分：prestare(借出) vs prendere in prestito(借入)",
+                    examples: [
+                        {it: "Ti presto il libro.", cn: "我把书借给你。"},
+                        {it: "Mi ha prestato la macchina.", cn: "他把车借给了我。"},
+                        {it: "Puoi prestarmi una penna?", cn: "你能借我一支笔吗？"}
+                    ],
+                    phrases: [
+                        "prestare qualcosa a qualcuno — 把某物借给某人",
+                        "prestare attenzione — 注意",
+                        "prestare aiuto — 提供帮助"
+                    ],
+                    tenses: {}
+                },
+                {
+                    infinito: "prestarsi",
+                    meaning: "适合；有助于；充当",
+                    category: "规则自反动词",
+                    tags: ["regular", "riflessivo"],
+                    aux: "essere",
+                    level: "B1",
+                    features: "• 自反动词<br>• 规则第一变位动词<br>• 助动词用 essere<br>• 接 a",
+                    examples: [
+                        {it: "Questa stanza si presta bene allo studio.", cn: "这个房间很适合学习。"},
+                        {it: "Non mi presto a questi giochi.", cn: "我不参与这些把戏。"},
+                        {it: "Si è prestato volontario.", cn: "他自愿参与。"}
+                    ],
+                    phrases: [
+                        "prestarsi a — 适合/有助于",
+                        "prestarsi come — 充当",
+                        "prestarsi volontario — 自愿充当"
+                    ],
+                    tenses: {}
+                },
             ],
             "r": [
                 {
@@ -7283,6 +7367,66 @@
                         "rovinare tutto — 毁了一切",
                         "rovinarsi — 毁掉自己",
                         "rovinare la serata — 破坏晚上的气氛"
+                    ],
+                    tenses: {}
+                },
+                {
+                    infinito: "restituire",
+                    meaning: "归还；退回；返还",
+                    category: "规则动词 (-ire -isc)",
+                    tags: ["regular"],
+                    aux: "avere",
+                    level: "B1",
+                    features: "• 规则第三变位动词 (-ire + -isc-)<br>• 过去分词：restituito",
+                    examples: [
+                        {it: "Ti restituisco il libro domani.", cn: "我明天把书还给你。"},
+                        {it: "Ha restituito i soldi.", cn: "他把钱退回了。"},
+                        {it: "Devo restituire questo vestito al negozio.", cn: "我得把这件衣服退回商店。"}
+                    ],
+                    phrases: [
+                        "restituire qualcosa a qualcuno — 把某物归还某人",
+                        "restituire il favore — 回报人情",
+                        "restituire la visita — 回访"
+                    ],
+                    tenses: {}
+                },
+                {
+                    infinito: "rimborsare",
+                    meaning: "退款；报销；偿还",
+                    category: "规则动词 (-are)",
+                    tags: ["regular"],
+                    aux: "avere",
+                    level: "B1",
+                    features: "• 规则第一变位动词<br>• 过去分词：rimborsato",
+                    examples: [
+                        {it: "Mi rimborsano il biglietto.", cn: "他们退我票钱。"},
+                        {it: "L'assicurazione ha rimborsato i danni.", cn: "保险赔付了损失。"},
+                        {it: "Ti rimborserò le spese.", cn: "我会报销你的费用。"}
+                    ],
+                    phrases: [
+                        "rimborsare le spese — 报销费用",
+                        "farsi rimborsare — 要求退款",
+                        "rimborsare un biglietto — 退票"
+                    ],
+                    tenses: {}
+                },
+                {
+                    infinito: "richiedere",
+                    meaning: "请求；要求；需要",
+                    category: "不规则动词 (-ere)",
+                    tags: ["irregular"],
+                    aux: "avere",
+                    level: "B1",
+                    features: "• 不规则第二变位动词<br>• 由 ri- + chiedere 构成<br>• 过去分词：richiesto<br>• 远过去时变位不规则",
+                    examples: [
+                        {it: "Richiedo un permesso.", cn: "我申请许可。"},
+                        {it: "Ha richiesto maggiori informazioni.", cn: "他要求更多信息。"},
+                        {it: "Questo lavoro richiede pazienza.", cn: "这份工作需要耐心。"}
+                    ],
+                    phrases: [
+                        "richiedere un documento — 申请文件",
+                        "richiedere informazioni — 要求信息",
+                        "richiedere tempo — 需要时间"
                     ],
                     tenses: {}
                 },
@@ -8555,6 +8699,26 @@
                         "sputare per terra — 随地吐痰",
                         "sputare fuori — 吐出来",
                         "sputare sangue — 吐血；努力"
+                    ],
+                    tenses: {}
+                },
+                {
+                    infinito: "spedire",
+                    meaning: "寄送；发送；派遣",
+                    category: "规则动词 (-ire -isc)",
+                    tags: ["regular"],
+                    aux: "avere",
+                    level: "B1",
+                    features: "• 规则第三变位动词 (-ire + -isc-)<br>• 过去分词：spedito",
+                    examples: [
+                        {it: "Spedisco un pacco a Roma.", cn: "我寄一个包裹到罗马。"},
+                        {it: "Ha spedito la lettera ieri.", cn: "他昨天寄了信。"},
+                        {it: "Ti spedirò il documento via email.", cn: "我会通过邮件把文件发给你。"}
+                    ],
+                    phrases: [
+                        "spedire un pacco — 寄包裹",
+                        "spedire una lettera — 寄信",
+                        "spedire per posta — 邮寄"
                     ],
                     tenses: {}
                 },
@@ -10056,6 +10220,8 @@
             "cucire":       {type:"ire", stem:"cuc", aux:"avere", pp:"cucito"},
             "cuocere":       {type:"ere", stem:"cuoc", aux:"avere", pp:"cotto", pres:["cuocio","cuoci","cuoce","cuociamo","cuocete","cuociono"], rem:["cossi","cuocesti","cosse","cuocemmo","cuoceste","cossero"]},
             "curare":        {type:"are", stem:"cur", aux:"avere", pp:"curato"},
+            "comparare":   {type:"are", stem:"compar", aux:"avere", pp:"comparato"},
+            "compararsi":  {type:"are-rfl", stem:"compar", aux:"essere", pp:"comparato"},
             // D
             "dare":       {type:"irr"},
             "decidere":   {type:"ere", stem:"decid", aux:"avere", pp:"deciso", rem:["decisi","decidesti","decise","decidemmo","decideste","decisero"]},
@@ -10203,6 +10369,8 @@
             "proporre":       {type:"irr"},
             "proteggere": {type:"ere", stem:"protegg", aux:"avere", pp:"protetto", pres:["proteggo","proteggi","protegge","proteggiamo","proteggete","proteggono"], rem:["protessi","proteggesti","protesse","proteggemmo","proteggeste","protessero"]},
             "pubblicare":     {type:"care", stem:"pubblic", aux:"avere", pp:"pubblicato"},
+            "prestare":    {type:"are", stem:"prest", aux:"avere", pp:"prestato"},
+            "prestarsi":   {type:"are-rfl", stem:"prest", aux:"essere", pp:"prestato"},
             // R
             "regalare":   {type:"are", stem:"regal", aux:"avere", pp:"regalato"},
             "restare":    {type:"are", stem:"rest", aux:"essere", pp:"restato"},
@@ -10226,6 +10394,9 @@
             "risultare":  {type:"are", stem:"risult", aux:"essere", pp:"risultato"},
             "rivelare":   {type:"are", stem:"rivel", aux:"avere", pp:"rivelato"},
             "rovinare":   {type:"are", stem:"rovin", aux:"avere", pp:"rovinato"},
+            "restituire": {type:"ire-isc", stem:"restitu", aux:"avere", pp:"restituito"},
+            "rimborsare": {type:"are", stem:"rimbors", aux:"avere", pp:"rimborsato"},
+            "richiedere": {type:"ere", stem:"richied", aux:"avere", pp:"richiesto", rem:["richiesi","richiedesti","richiese","richiedemmo","richiedeste","richiesero"]},
             // S
             "saltare":    {type:"are", stem:"salt", aux:"avere", pp:"saltato"},
             "sapere":     {type:"irr"},
@@ -10289,6 +10460,7 @@
             "suggerire":  {type:"ire-isc", stem:"sugger", aux:"avere", pp:"suggerito"},
             "svuotare":   {type:"are", stem:"svuot", aux:"avere", pp:"svuotato"},
             "sputare":    {type:"are", stem:"sput", aux:"avere", pp:"sputato"},
+            "spedire":    {type:"ire-isc", stem:"sped", aux:"avere", pp:"spedito"},
             // T
             "telefonare": {type:"are", stem:"telefon", aux:"avere", pp:"telefonato"},
             "tornare":    {type:"are", stem:"torn", aux:"essere", pp:"tornato"},
