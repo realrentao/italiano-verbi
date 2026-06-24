@@ -462,6 +462,7 @@
             "utilizzare": {type:"are", stem:"utilizz", aux:"avere", pp:"utilizzato"},
             // U 补充2
             "udire":      {type:"irr"},
+            "ululare":     {type:"are", stem:"ulul", aux:"avere", pp:"ululato"},
             "umiliare":   {type:"iare", stem:"umili", aux:"avere", pp:"umiliato"},
             "unire":      {type:"ire-isc", stem:"un", aux:"avere", pp:"unito"},
             "urlare":     {type:"are", stem:"url", aux:"avere", pp:"urlato"},
