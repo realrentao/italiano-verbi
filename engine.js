@@ -244,6 +244,8 @@
             "impiantare":    {type:"are", stem:"impiant", aux:"avere", pp:"impiantato"},
             "indicare":     {type:"care", stem:"indic", aux:"avere", pp:"indicato"},
             "indossare":     {type:"are", stem:"indoss", aux:"avere", pp:"indossato"},
+            "ingoiare":     {type:"iare", stem:"ingoi", aux:"avere", pp:"ingoiato"},
+            "ignorare":     {type:"are", stem:"ignor", aux:"avere", pp:"ignorato"},
             "iniziare":   {type:"iare", stem:"inizi", aux:"avere", pp:"iniziato"},
             "inserire":      {type:"ire-isc", stem:"inser", aux:"avere", pp:"inserito"},
             "insistere":     {type:"ere", stem:"insist", aux:"avere", pp:"insistito"},
