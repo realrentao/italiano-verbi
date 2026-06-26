@@ -196,6 +196,7 @@
             "dovere":     {type:"irr"},
             // E
             "essere":     {type:"irr"},
+            "essersi":    {type:"irr"},
             // E 补充
             "educare":     {type:"care", stem:"educ", aux:"avere", pp:"educato"},
             "elaborare":   {type:"are", stem:"elabor", aux:"avere", pp:"elaborato"},
