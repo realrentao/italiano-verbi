@@ -116,6 +116,7 @@
             "analizzare":  {type:"are", stem:"analizz", aux:"avere", pp:"analizzato"},
             "andare":     {type:"irr"},
             "apparire":     {type:"ire-isc", stem:"appar", aux:"essere", pp:"apparso"},
+            "appartenere":  {type:"ere", stem:"apparten", aux:"essere", pp:"appartenuto", pres:["appartengo","appartieni","appartiene","apparteniamo","appartenete","appartengono"], rem:["appartenni","appartenesti","appartenne","appartenemmo","apparteneste","appartenero"]},
             "applicare":   {type:"care", stem:"applic", aux:"avere", pp:"applicato"},
             "apprezzare":  {type:"are", stem:"apprezz", aux:"avere", pp:"apprezzato"},
             "approfittare": {type:"are", stem:"approfitt", aux:"avere", pp:"approfittato"},
@@ -183,6 +184,7 @@
             "curare":        {type:"are", stem:"cur", aux:"avere", pp:"curato"},
             "comparare":   {type:"are", stem:"compar", aux:"avere", pp:"comparato"},
             "compararsi":  {type:"are-rfl", stem:"compar", aux:"essere", pp:"comparato"},
+            "comparire":    {type:"ire-isc", stem:"compar", aux:"essere", pp:"comparso", pres:["compaio","comparisci","compare","compariamo","comparite","compaiono"]},
             // D
             "dare":       {type:"irr"},
             "decidere":   {type:"ere", stem:"decid", aux:"avere", pp:"deciso", rem:["decisi","decidesti","decise","decidemmo","decideste","decisero"]},
@@ -190,6 +192,7 @@
 "depilare":   {type:"are", stem:"depil", aux:"avere", pp:"depilato"},
             "descrivere": {type:"ere", stem:"descriv", aux:"avere", pp:"descritto", pres:["descrivo","descrivi","descrive","descriviamo","descrivete","descrivono"], rem:["descrisi","descrivesti","descrisse","descrivemmo","descriveste","descrisero"]},
             "dire":       {type:"irr"},
+            "dirigersi":   {type:"ere", stem:"dirig", aux:"essere", pp:"diretto", pres:["dirigo","dirigi","dirige","dirigiamo","dirigete","dirigono"], rem:["diressi","dirigesti","diresse","dirigemmo","dirigeste","diressero"]},
             "divertirsi": {type:"irr"}, // manually defined
 "divertire":  {type:"ire", stem:"divert", aux:"avere", pp:"divertito"},
             "dormire":    {type:"ire", stem:"dorm", aux:"avere", pp:"dormito"},
@@ -391,6 +394,7 @@
             "salutare":   {type:"are", stem:"salut", aux:"avere", pp:"salutato"},
             "seguire":    {type:"ire", stem:"segu", aux:"avere", pp:"seguito"},
             "smettere":   {type:"ere", stem:"smett", aux:"avere", pp:"smesso", rem:["smisi","smettesti","smise","smettemmo","smetteste","smisero"]},
+            "sistemare":   {type:"are", stem:"sistem", aux:"avere", pp:"sistemato"},
             "sorridere":  {type:"ere", stem:"sorrid", aux:"avere", pp:"sorriso", rem:["sorrisi","sorridesti","sorrise","sorridemmo","sorrideste","sorrisero"]},
             "spegnere":   {type:"ere", stem:"spegn", aux:"avere", pp:"spento", pres:["spengo","spegni","spegne","spegniamo","spegnete","spengono"], rem:["spensi","spegnesti","spense","spegnemmo","spegneste","spensero"]},
             // S 补充2
@@ -456,6 +460,7 @@
             "trarre":     {type:"irr"},
             "trasportare":{type:"are", stem:"trasport", aux:"avere", pp:"trasportato"},
             "trattare":   {type:"are", stem:"tratt", aux:"avere", pp:"trattato"},
+            "trattarsi":   {type:"are-rfl", stem:"tratt", aux:"essere", pp:"trattato"},
             "tremare":    {type:"are", stem:"trem", aux:"avere", pp:"tremato"},
             "truccarsi":  {type:"are-rfl", stem:"trucc", aux:"essere", pp:"truccato"},
             "truccare":   {type:"care", stem:"trucc", aux:"avere", pp:"truccato"},
