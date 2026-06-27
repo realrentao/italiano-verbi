@@ -184,7 +184,8 @@
             "curare":        {type:"are", stem:"cur", aux:"avere", pp:"curato"},
             "comparare":   {type:"are", stem:"compar", aux:"avere", pp:"comparato"},
             "compararsi":  {type:"are-rfl", stem:"compar", aux:"essere", pp:"comparato"},
-            "comparire":    {type:"ire-isc", stem:"compar", aux:"essere", pp:"comparso", pres:["compaio","comparisci","compare","compariamo","comparite","compaiono"]},
+            "comparire":    {type:"ire-isc", stem:"compar", aux:"essere", pp:"comparso", pres:["compaio","comparisci","compare","compariamo","comparite","compaiono"]}
+  "cosatare": {type:"are", stem:"cosat", aux:"avere", pp:"cosatato"},,
             // D
             "dare":       {type:"irr"},
             "decidere":   {type:"ere", stem:"decid", aux:"avere", pp:"deciso", rem:["decisi","decidesti","decise","decidemmo","decideste","decisero"]},
