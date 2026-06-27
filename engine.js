@@ -306,7 +306,8 @@
 "ostinare":   {type:"are", stem:"ostin", aux:"avere", pp:"ostinato"},
             "ottenere":   {type:"irr"},
             // P
-            "pagare":     {type:"care", stem:"pag", aux:"avere", pp:"pagato"},
+
+    "piuttostare": {type:"are", stem:"piuttost", aux:"avere", pp:"piuttostato"},            "pagare":     {type:"care", stem:"pag", aux:"avere", pp:"pagato"},
             "partire":    {type:"ire", stem:"part", aux:"essere", pp:"partito"},
             "passare":    {type:"are", stem:"pass", aux:"avere", pp:"passato"},
             "pensare":    {type:"are", stem:"pens", aux:"avere", pp:"pensato"},
