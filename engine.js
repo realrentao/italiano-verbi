@@ -187,7 +187,8 @@
             "comparire":    {type:"ire-isc", stem:"compar", aux:"essere", pp:"comparso", pres:["compaio","comparisci","compare","compariamo","comparite","compaiono"]},
             "cosatare":   {type:"are", stem:"cosat", aux:"avere", pp:"cosatato"},
             // D
-            "dare":       {type:"irr"},
+
+    "dirige":    {type:"irr"},            "dare":       {type:"irr"},
             "decidere":   {type:"ere", stem:"decid", aux:"avere", pp:"deciso", rem:["decisi","decidesti","decise","decidemmo","decideste","decisero"]},
             "depilarsi":  {type:"are-rfl", stem:"depil", aux:"essere", pp:"depilato"},
 "depilare":   {type:"are", stem:"depil", aux:"avere", pp:"depilato"},
