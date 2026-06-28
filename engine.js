@@ -346,7 +346,8 @@
             "prestare":    {type:"are", stem:"prest", aux:"avere", pp:"prestato"},
             "prestarsi":   {type:"are-rfl", stem:"prest", aux:"essere", pp:"prestato"},
             // R
-            "regalare":   {type:"are", stem:"regal", aux:"avere", pp:"regalato"},
+
+    "riuscire": {type:"irr", stem:"", aux:"essere", pp:""},            "regalare":   {type:"are", stem:"regal", aux:"avere", pp:"regalato"},
             "restare":    {type:"are", stem:"rest", aux:"essere", pp:"restato"},
             "ricevere":   {type:"ere", stem:"ricev", aux:"avere", pp:"ricevuto"},
             "ricordare":  {type:"are", stem:"ricord", aux:"avere", pp:"ricordato"},
