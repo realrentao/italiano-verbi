@@ -679,6 +679,7 @@
         // ==================== ALPHABET INDEX ====================
         function renderAlphaIndex() {
             const container = document.getElementById('alphaIndex');
+            container.innerHTML = ''; // Clear for re-render
             const letters = "abcdefghijklmnopqrstuvwxyz".split("");
             letters.forEach(l => {
                 const btn = document.createElement('button');
