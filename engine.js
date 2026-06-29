@@ -1010,11 +1010,26 @@
             }
         });
         // ==================== START ====================
-        // Check if verbData is already loaded (cached)
+        // Progressive loading: use critical A data if available, then merge full data
         function ready() {
             if (typeof verbData !== 'undefined') {
+                // Full verb-data.js already loaded → render everything
                 init();
+            } else if (window.__A_CRITICAL) {
+                // Critical A-section data available → render A section immediately
+                // without waiting for the full 300KB verb-data.js download
+                verbData = {a: window.__A_CRITICAL};
+                init();
+                // When full verb-data.js loads, merge and enable all 26 letters
+                window.__verbDataReady = function() {
+                    // verbData is now overwritten by verb-data.js's var verbData = {...}
+                    // Re-enable all letter buttons with correct counts
+                    renderAlphaIndex();
+                    // Re-render current letter's verb list if still selected
+                    if (currentLetter) selectLetter(currentLetter);
+                };
             } else {
+                // No critical data and no verb-data.js yet → wait for verb-data.js
                 window.__verbDataReady = init;
             }
         }
