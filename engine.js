@@ -352,6 +352,7 @@
             "prestarsi":   {type:"are-rfl", stem:"prest", aux:"essere", pp:"prestato"},
             // R
 
+    "riportare":    {type:"are", stem:"riport", aux:"avere", pp:"riportato"},
     "riuscire": {type:"irr", stem:"", aux:"essere", pp:""},            "regalare":   {type:"are", stem:"regal", aux:"avere", pp:"regalato"},
             "restare":    {type:"are", stem:"rest", aux:"essere", pp:"restato"},
             "ricevere":   {type:"ere", stem:"ricev", aux:"avere", pp:"ricevuto"},
@@ -379,6 +380,7 @@
             "richiedere": {type:"ere", stem:"richied", aux:"avere", pp:"richiesto", rem:["richiesi","richiedesti","richiese","richiedemmo","richiedeste","richiesero"]},
             // S
 
+    "spazientirsi": {type:"irr"},
     "sfuggire":    {type:"ire", stem:"sfugg", aux:"avere", pp:"sfuggito"},            "salire":      {type:"irr"},
             "saltare":    {type:"are", stem:"salt", aux:"avere", pp:"saltato"},
             "sapere":     {type:"irr"},
