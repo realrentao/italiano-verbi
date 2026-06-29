@@ -512,7 +512,8 @@
             // P fallback
             "parlare":    {type:"are", stem:"parl", aux:"avere", pp:"parlato"},
             // Z
-            "zittire":     {type:"ire-isc", stem:"zitt", aux:"avere", pp:"zittito"},
+
+    "zittirsi":    {type:"irr"},            "zittire":     {type:"ire-isc", stem:"zitt", aux:"avere", pp:"zittito"},
         };
         const REFL_PR = ["mi","ti","si","ci","vi","si"];
         const PRON = ["Io","Tu","Lui/Lei","Noi","Voi","Loro"];
