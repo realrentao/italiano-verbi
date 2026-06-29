@@ -192,7 +192,7 @@
             "cosatare":   {type:"are", stem:"cosat", aux:"avere", pp:"cosatato"},
             // D
 
-    "dirige":    {type:"irr"},            "dare":       {type:"irr"},
+    "dirige":     {type:"ere", stem:"dirig", aux:"avere", pp:"diretto", pres:["dirigo","dirigi","dirige","dirigiamo","dirigete","dirigono"]},            "dare":       {type:"irr"},
             "decidere":   {type:"ere", stem:"decid", aux:"avere", pp:"deciso", rem:["decisi","decidesti","decise","decidemmo","decideste","decisero"]},
             "depilarsi":  {type:"are-rfl", stem:"depil", aux:"essere", pp:"depilato"},
 "depilare":   {type:"are", stem:"depil", aux:"avere", pp:"depilato"},
