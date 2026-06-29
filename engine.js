@@ -89,6 +89,8 @@
         const VCONJ = {
             // A
 
+    "avvicinare":  {type:"are", stem:"avvicin", aux:"avere", pp:"avvicinato"},
+    "avvicinarsi": {type:"are-rfl", stem:"avvicin", aux:"essere", pp:"avvicinato"},
     "accarezzare": {type:"are", stem:"accarezz", aux:"avere", pp:"accarezzato"},            "abbracciare": {type:"iare", stem:"abbracci", aux:"avere", pp:"abbracciato"},
             "abitare":    {type:"are", stem:"abit", aux:"avere", pp:"abitato"},
             "abituare":    {type:"are", stem:"abitu", aux:"avere", pp:"abituato"},
