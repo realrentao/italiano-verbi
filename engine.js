@@ -61,7 +61,8 @@
         }
         // ==================== CONJUGATION ENGINE ====================
         // Automatically generates all 21 tenses for every verb based on its type.
-        // Manually defined tenses (e.g. essere) are preserved.
+
+            // Manually defined tenses (e.g. essere) are preserved.
         const AUX = {
             "avere": {
                 pres:["ho","hai","ha","abbiamo","avete","hanno"],
@@ -87,7 +88,8 @@
         // Verb metadata: type, stem, aux, pp
         const VCONJ = {
             // A
-            "abbracciare": {type:"iare", stem:"abbracci", aux:"avere", pp:"abbracciato"},
+
+    "accarezzare": {type:"are", stem:"accarezz", aux:"avere", pp:"accarezzato"},            "abbracciare": {type:"iare", stem:"abbracci", aux:"avere", pp:"abbracciato"},
             "abitare":    {type:"are", stem:"abit", aux:"avere", pp:"abitato"},
             "abituare":    {type:"are", stem:"abitu", aux:"avere", pp:"abituato"},
             "abituarsi":    {type:"are-rfl", stem:"abitu", aux:"essere", pp:"abituato"},
@@ -212,7 +214,8 @@
             "esprimere":   {type:"ere", stem:"esprim", aux:"avere", pp:"espresso", rem:["espressi","esprimesti","espresse","esprimemmo","esprimeste","espressero"]},
             "evitare":     {type:"are", stem:"evit", aux:"avere", pp:"evitato"},
             // F
-            "fare":       {type:"irr"},
+
+    "fiutare":     {type:"are", stem:"fiut", aux:"avere", pp:"fiutato"},            "fare":       {type:"irr"},
             "fermare":    {type:"are", stem:"ferm", aux:"avere", pp:"fermato"},
             "fermarsi":   {type:"are-rfl", stem:"ferm", aux:"essere", pp:"fermato"},
             "festeggiare": {type:"iare", stem:"festeggi", aux:"avere", pp:"festeggiato"},
@@ -373,7 +376,8 @@
             "rimborsare": {type:"are", stem:"rimbors", aux:"avere", pp:"rimborsato"},
             "richiedere": {type:"ere", stem:"richied", aux:"avere", pp:"richiesto", rem:["richiesi","richiedesti","richiese","richiedemmo","richiedeste","richiesero"]},
             // S
-            "salire":      {type:"irr"},
+
+    "sfuggire":    {type:"ire", stem:"sfugg", aux:"avere", pp:"sfuggito"},            "salire":      {type:"irr"},
             "saltare":    {type:"are", stem:"salt", aux:"avere", pp:"saltato"},
             "sapere":     {type:"irr"},
             "sbagliare":  {type:"iare", stem:"sbagli", aux:"avere", pp:"sbagliato"},
