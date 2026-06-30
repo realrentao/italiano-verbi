@@ -283,6 +283,7 @@
             // M
             "mancare":    {type:"care", stem:"manc", aux:"essere", pp:"mancato"},
             "mangiare":   {type:"iare", stem:"mangi", aux:"avere", pp:"mangiato"},
+            "mangiarsi":   {type:"irr"},
             "mantenere":   {type:"irr"},
             "mentire":     {type:"ire", stem:"ment", aux:"avere", pp:"mentito"},
             "meritare":    {type:"are", stem:"merit", aux:"avere", pp:"meritato"},
@@ -360,6 +361,8 @@
             "rilassarsi": {type:"are-rfl", stem:"rilass", aux:"essere", pp:"rilassato"},
             "rilassare":  {type:"are", stem:"rilass", aux:"avere", pp:"rilassato"},
             "rimanere":   {type:"irr"},
+            "rimangiare":  {type:"iare", stem:"rimangi", aux:"avere", pp:"rimangiato"},
+            "rimangiarsi": {type:"irr"},
             "ringraziare":{type:"iare", stem:"ringrazi", aux:"avere", pp:"ringraziato"},
             "ripetere":   {type:"ere", stem:"ripet", aux:"avere", pp:"ripetuto"},
             "rispondere": {type:"ere", stem:"rispond", aux:"avere", pp:"risposto", rem:["risposi","rispondesti","rispose","rispondemmo","rispondeste","risposero"]},
