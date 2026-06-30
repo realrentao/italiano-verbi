@@ -344,6 +344,7 @@
             "preferire":  {type:"ire-isc", stem:"prefer", aux:"avere", pp:"preferito"},
             "precipitarsi": {type:"arsi", stem:"precipit", aux:"essere", pp:"precipitato"},
             "pregare":        {type:"care", stem:"preg", aux:"avere", pp:"pregato"},
+            "prelevare":     {type:"are", stem:"prelev", aux:"avere", pp:"prelevato"},
             "preoccupare":    {type:"are", stem:"preoccup", aux:"avere", pp:"preoccupato"},
             "produrre":       {type:"irr"},
             "pronunciare":    {type:"iare", stem:"pronunci", aux:"avere", pp:"pronunciato"},
