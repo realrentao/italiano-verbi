@@ -150,6 +150,7 @@
             "bere":       {type:"irr"},
             "brillare":   {type:"are", stem:"brill", aux:"avere", pp:"brillato"},
             "brontolare": {type:"are", stem:"brontol", aux:"avere", pp:"brontolato"},
+            "bussare":    {type:"are", stem:"buss", aux:"avere", pp:"bussato"},
             "buttare":    {type:"are", stem:"butt", aux:"avere", pp:"buttato"},
             // C
             "camminare":  {type:"are", stem:"cammin", aux:"avere", pp:"camminato"},
