@@ -324,6 +324,7 @@
             "piovere":    {type:"ere", stem:"piov", aux:"essere", pp:"piovuto"},
             "portare":    {type:"are", stem:"port", aux:"avere", pp:"portato"},
             "prendere":   {type:"ere", stem:"prend", aux:"avere", pp:"preso", rem:["presi","prendesti","prese","prendemmo","prendeste","presero"]},
+            "prendersi":   {type:"irr"},
             "prenotare":  {type:"are", stem:"prenot", aux:"avere", pp:"prenotato"},
             "preoccuparsi":{type:"are-rfl", stem:"preoccup", aux:"essere", pp:"preoccupato"},
             "prepararsi": {type:"are-rfl", stem:"prepar", aux:"essere", pp:"preparato"},
