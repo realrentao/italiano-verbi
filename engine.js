@@ -110,6 +110,7 @@
             "affittare":    {type:"are", stem:"affitt", aux:"avere", pp:"affittato"},
             "affrontare":  {type:"are", stem:"affront", aux:"avere", pp:"affrontato"},
             "agire":        {type:"ire-isc", stem:"ag", aux:"avere", pp:"agito"},
+            "aggiornare":   {type:"are", stem:"aggiorn", aux:"avere", pp:"aggiornato"},
             "aiutare":    {type:"are", stem:"aiut", aux:"avere", pp:"aiutato"},
             "allontanarsi": {type:"are-rfl", stem:"allontan", aux:"essere", pp:"allontanato"},
 "allontanare":{type:"are", stem:"allontan", aux:"avere", pp:"allontanato"},
@@ -154,6 +155,7 @@
             "buttare":    {type:"are", stem:"butt", aux:"avere", pp:"buttato"},
             // C
             "camminare":  {type:"are", stem:"cammin", aux:"avere", pp:"camminato"},
+            "cacciarsi":   {type:"irr"},
             "cantare":    {type:"are", stem:"cant", aux:"avere", pp:"cantato"},
             "capire":     {type:"ire-isc", stem:"cap", aux:"avere", pp:"capito"},
             "cercare":    {type:"care", stem:"cerc", aux:"avere", pp:"cercato"},
@@ -174,6 +176,7 @@
             "comportarsi":  {type:"are-rfl", stem:"comport", aux:"essere", pp:"comportato"},
             "comportare": {type:"are", stem:"comport", aux:"avere", pp:"comportato"},
             "comunicare":    {type:"care", stem:"comunic", aux:"avere", pp:"comunicato"},
+            "concedere":     {type:"ere", stem:"conced", aux:"avere", pp:"concesso", rem:["concessi","concedesti","concesse","concedemmo","concedeste","concessero"]},
             "considerare":   {type:"are", stem:"consider", aux:"avere", pp:"considerato"},
             "consultare":   {type:"are", stem:"consult", aux:"avere", pp:"consultato"},
             "contenere":     {type:"irr"},
@@ -358,6 +361,7 @@
 
     "riportare":    {type:"are", stem:"riport", aux:"avere", pp:"riportato"},
     "riuscire": {type:"irr", stem:"", aux:"essere", pp:""},            "regalare":   {type:"are", stem:"regal", aux:"avere", pp:"regalato"},
+            "rendere":     {type:"ere", stem:"rend", aux:"avere", pp:"reso", rem:["resi","rendesti","rese","rendemmo","rendeste","resero"]},
             "restare":    {type:"are", stem:"rest", aux:"essere", pp:"restato"},
             "ricevere":   {type:"ere", stem:"ricev", aux:"avere", pp:"ricevuto"},
             "ricordare":  {type:"are", stem:"ricord", aux:"avere", pp:"ricordato"},
