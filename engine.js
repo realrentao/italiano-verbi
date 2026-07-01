@@ -376,6 +376,7 @@
             // R 补充
             "raccontare": {type:"are", stem:"raccont", aux:"avere", pp:"raccontato"},
             "ridere":     {type:"ere", stem:"rid", aux:"avere", pp:"riso", rem:["risi","ridesti","rise","ridemmo","rideste","risero"]},
+            "riferire":   {type:"ire-isc", stem:"rifer", aux:"avere", pp:"riferito"},
             "rompere":    {type:"ere", stem:"romp", aux:"avere", pp:"rotto", rem:["ruppi","rompesti","ruppe","rompemmo","rompeste","ruppero"]},
             // R 补充
             "rifiutare":  {type:"are", stem:"rifiut", aux:"avere", pp:"rifiutato"},
