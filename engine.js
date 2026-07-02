@@ -458,6 +458,7 @@
             "suggerire":  {type:"ire-isc", stem:"sugger", aux:"avere", pp:"suggerito"},
             "svuotare":   {type:"are", stem:"svuot", aux:"avere", pp:"svuotato"},
             "sputare":    {type:"are", stem:"sput", aux:"avere", pp:"sputato"},
+            "squillare":   {type:"are", stem:"squill", aux:"avere", pp:"squillato"},
             "spedire":    {type:"ire-isc", stem:"sped", aux:"avere", pp:"spedito"},
             // T
             "telefonare": {type:"are", stem:"telefon", aux:"avere", pp:"telefonato"},
