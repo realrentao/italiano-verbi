@@ -97,6 +97,7 @@
             "abituarsi":    {type:"are-rfl", stem:"abitu", aux:"essere", pp:"abituato"},
             "accendere":  {type:"ere", stem:"accend", aux:"avere", pp:"acceso", rem:["accesi","accendesti","accese","accendemmo","accendeste","accesero"]},
             "accendersi": {type:"irr"},
+            "accennare":   {type:"are", stem:"accenn", aux:"avere", pp:"accennato"},
             "accettare":  {type:"are", stem:"accett", aux:"avere", pp:"accettato"},
             "accettarsi": {type:"are-rfl", stem:"accett", aux:"essere", pp:"accettato"},
             "accogliere":   {type:"ere", stem:"accogli", aux:"avere", pp:"accolto", pres:["accolgo","accogli","accoglie","accogliamo","accogliete","accolgono"], rem:["accolsi","accogliesti","accolse","accogliemmo","accoglieste","accolsero"]},
