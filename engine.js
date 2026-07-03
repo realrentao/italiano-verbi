@@ -444,6 +444,7 @@
             "soffrire":   {type:"ire", stem:"soffr", aux:"avere", pp:"sofferto", rem:["soffrii","soffristi","soffrì","soffrimmo","soffriste","soffrirono"]},
             "soffermarsi":{type:"are-rfl", stem:"sofferm", aux:"essere", pp:"soffermato"},
             "sostenere":  {type:"irr"},
+            "sottare":    {type:"are", stem:"sott", aux:"avere", pp:"sottato"},
             "sottolineare":{type:"are", stem:"sottoline", aux:"avere", pp:"sottolineato"},
             "spaventare": {type:"are", stem:"spavent", aux:"avere", pp:"spaventato"},
             "spiegare":   {type:"care", stem:"spieg", aux:"avere", pp:"spiegato"},
