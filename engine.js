@@ -310,6 +310,7 @@
             "occupare":     {type:"are", stem:"occup", aux:"avere", pp:"occupato"},
             "odiare":       {type:"iare", stem:"odi", aux:"avere", pp:"odiato"},
             "offrire":    {type:"ire", stem:"offr", aux:"avere", pp:"offerto", rem:["offersi","offristi","offerse","offrimmo","offriste","offersero"]},
+            "offendersi":   {type:"irr"},
             "operare":      {type:"are", stem:"oper", aux:"avere", pp:"operato"},
             "ordinare":   {type:"are", stem:"ordin", aux:"avere", pp:"ordinato"},
             "organizzare":{type:"are", stem:"organizz", aux:"avere", pp:"organizzato"},
@@ -461,6 +462,7 @@
             "svuotare":   {type:"are", stem:"svuot", aux:"avere", pp:"svuotato"},
             "sputare":    {type:"are", stem:"sput", aux:"avere", pp:"sputato"},
             "squillare":   {type:"are", stem:"squill", aux:"avere", pp:"squillato"},
+            "spuntare":    {type:"are", stem:"spunt", aux:"avere", pp:"spuntato"},
             "spedire":    {type:"ire-isc", stem:"sped", aux:"avere", pp:"spedito"},
             // T
             "telefonare": {type:"are", stem:"telefon", aux:"avere", pp:"telefonato"},
