@@ -445,6 +445,7 @@
             "soffermarsi":{type:"are-rfl", stem:"sofferm", aux:"essere", pp:"soffermato"},
             "sostenere":  {type:"irr"},
             "sottare":    {type:"are", stem:"sott", aux:"avere", pp:"sottato"},
+            "sotterrare": {type:"are", stem:"sotterr", aux:"avere", pp:"sotterrato"},
             "sottolineare":{type:"are", stem:"sottoline", aux:"avere", pp:"sottolineato"},
             "spaventare": {type:"are", stem:"spavent", aux:"avere", pp:"spaventato"},
             "spiegare":   {type:"care", stem:"spieg", aux:"avere", pp:"spiegato"},
