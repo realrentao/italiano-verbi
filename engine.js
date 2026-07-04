@@ -132,6 +132,7 @@
             "arrivare":   {type:"are", stem:"arriv", aux:"essere", pp:"arrivato"},
             "ascoltare":  {type:"are", stem:"ascolt", aux:"avere", pp:"ascoltato"},
             "aspettare":  {type:"are", stem:"aspett", aux:"avere", pp:"aspettato"},
+            "aspettarsi": {type:"are-rfl", stem:"aspett", aux:"essere", pp:"aspettato"},
             "assaggiare": {type:"iare", stem:"assaggi", aux:"avere", pp:"assaggiato"},
             "assicurare":   {type:"are", stem:"assicur", aux:"avere", pp:"assicurato"},
             "assistere":   {type:"ere", stem:"assist", aux:"avere", pp:"assistito"},
