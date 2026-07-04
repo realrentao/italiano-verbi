@@ -405,6 +405,7 @@
             "sentire":    {type:"ire", stem:"sent", aux:"avere", pp:"sentito"},
             "sentirsi":   {type:"ire", stem:"sent", aux:"essere", pp:"sentito"},
             "servire":    {type:"ire", stem:"serv", aux:"avere", pp:"servito"},
+            "soggiornare": {type:"are", stem:"soggiorn", aux:"avere", pp:"soggiornato"},
             "sognare":    {type:"are", stem:"sogn", aux:"avere", pp:"sognato"},
             "spendere":   {type:"ere", stem:"spend", aux:"avere", pp:"speso", rem:["spesi","spendesti","spese","spendemmo","spendeste","spesero"]},
             "sperare":    {type:"are", stem:"sper", aux:"avere", pp:"sperato"},
