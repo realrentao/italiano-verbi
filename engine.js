@@ -140,6 +140,7 @@
             "aumentare":    {type:"are", stem:"aument", aux:"essere", pp:"aumentato"},
             "avanzare":     {type:"are", stem:"avanz", aux:"avere", pp:"avanzato"},
             "avere":      {type:"irr"},
+            "avvenire":    {type:"irr"},
             "avvisare":    {type:"are", stem:"avvis", aux:"avere", pp:"avvisato"},
             "abbracciarsi":{type:"are-rfl", stem:"abbracci", aux:"essere", pp:"abbracciato"},
             "adoperarsi": {type:"are-rfl", stem:"adoper", aux:"essere", pp:"adoperato"},
@@ -377,6 +378,7 @@
             "rispondere": {type:"ere", stem:"rispond", aux:"avere", pp:"risposto", rem:["risposi","rispondesti","rispose","rispondemmo","rispondeste","risposero"]},
             // R 补充
             "raccontare": {type:"are", stem:"raccont", aux:"avere", pp:"raccontato"},
+            "rapinare":    {type:"are", stem:"rapin", aux:"avere", pp:"rapinato"},
             "ridere":     {type:"ere", stem:"rid", aux:"avere", pp:"riso", rem:["risi","ridesti","rise","ridemmo","rideste","risero"]},
             "riferire":   {type:"ire-isc", stem:"rifer", aux:"avere", pp:"riferito"},
             "rompere":    {type:"ere", stem:"romp", aux:"avere", pp:"rotto", rem:["ruppi","rompesti","ruppe","rompemmo","rompeste","ruppero"]},
