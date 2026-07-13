@@ -142,7 +142,6 @@
             "avanzare":     {type:"are", stem:"avanz", aux:"avere", pp:"avanzato"},
             "avere":      {type:"irr"},
             "avvenire":    {type:"irr"},
-            "avvisare":    {type:"are", stem:"avvis", aux:"avere", pp:"avvisato"},
             "abbracciarsi":{type:"are-rfl", stem:"abbracci", aux:"essere", pp:"abbracciato"},
             "adoperarsi": {type:"are-rfl", stem:"adoper", aux:"essere", pp:"adoperato"},
             "accontentarsi":{type:"are-rfl", stem:"accontent", aux:"essere", pp:"accontentato"},
@@ -206,7 +205,7 @@
 "depilare":   {type:"are", stem:"depil", aux:"avere", pp:"depilato"},
             "descrivere": {type:"ere", stem:"descriv", aux:"avere", pp:"descritto", pres:["descrivo","descrivi","descrive","descriviamo","descrivete","descrivono"], rem:["descrisi","descrivesti","descrisse","descrivemmo","descriveste","descrisero"]},
             "dire":       {type:"irr"},
-            "dirigersi":   {type:"ere", stem:"dirig", aux:"essere", pp:"diretto", pres:["dirigo","dirigi","dirige","dirigiamo","dirigete","dirigono"], rem:["diressi","dirigesti","diresse","dirigemmo","dirigeste","diressero"]},
+            "dirigersi":   {type:"ere-rfl", stem:"dirig", aux:"essere", pp:"diretto", pres:["dirigo","dirigi","dirige","dirigiamo","dirigete","dirigono"], rem:["diressi","dirigesti","diresse","dirigemmo","dirigeste","diressero"]},
             "divertirsi": {type:"irr"}, // manually defined
 "divertire":  {type:"ire", stem:"divert", aux:"avere", pp:"divertito"},
             "dormire":    {type:"ire", stem:"dorm", aux:"avere", pp:"dormito"},
@@ -256,7 +255,7 @@
             "informare":  {type:"are", stem:"inform", aux:"avere", pp:"informato"},
             "insegnare":  {type:"are", stem:"insegn", aux:"avere", pp:"insegnato"},
             "interessare":{type:"are", stem:"interess", aux:"avere", pp:"interessato"},
-            "iscriversi":  {type:"ere", stem:"iscriv", aux:"essere", pp:"iscritto", rem:["iscrissi","iscrivesti","iscrisse","iscrivemmo","iscriveste","iscrissero"]},
+            "iscriversi":  {type:"ere-rfl", stem:"iscriv", aux:"essere", pp:"iscritto", rem:["iscrissi","iscrivesti","iscrisse","iscrivemmo","iscriveste","iscrissero"]},
 "iscrivere":  {type:"ere", stem:"iscriv", aux:"avere", pp:"iscritto", pres:["iscrivo","iscrivi","iscrive","iscriviamo","iscrivete","iscrivono"], rem:["iscrissi","iscrivesti","iscrisse","iscrivemmo","iscriveste","iscrissero"]},
             // I 补充
             "immaginare":    {type:"are", stem:"immagin", aux:"avere", pp:"immaginato"},
@@ -352,7 +351,7 @@
             "possedere":      {type:"ere", stem:"possed", aux:"avere", pp:"posseduto", pres:["possiedo","possiedi","possiede","possediamo","possedete","possiedono"]},
             "praticare":   {type:"care", stem:"pratic", aux:"avere", pp:"praticato"},
             "preferire":  {type:"ire-isc", stem:"prefer", aux:"avere", pp:"preferito"},
-            "precipitarsi": {type:"arsi", stem:"precipit", aux:"essere", pp:"precipitato"},
+            "precipitarsi": {type:"are-rfl", stem:"precipit", aux:"essere", pp:"precipitato"},
             "pregare":        {type:"care", stem:"preg", aux:"avere", pp:"pregato"},
             "prelevare":     {type:"are", stem:"prelev", aux:"avere", pp:"prelevato"},
             "preoccupare":    {type:"are", stem:"preoccup", aux:"avere", pp:"preoccupato"},
@@ -408,7 +407,7 @@
             "scusare":    {type:"are", stem:"scus", aux:"avere", pp:"scusato"},
             "sembrare":   {type:"are", stem:"sembr", aux:"essere", pp:"sembrato"},
             "sentire":    {type:"ire", stem:"sent", aux:"avere", pp:"sentito"},
-            "sentirsi":   {type:"ire", stem:"sent", aux:"essere", pp:"sentito"},
+            "sentirsi":   {type:"ire-rfl", stem:"sent", aux:"essere", pp:"sentito"},
             "servire":    {type:"ire", stem:"serv", aux:"avere", pp:"servito"},
             "soggiornare": {type:"are", stem:"soggiorn", aux:"avere", pp:"soggiornato"},
             "sorvegliare": {type:"are", stem:"sorvegli", aux:"avere", pp:"sorvegliato"},
@@ -517,7 +516,7 @@
             "vedere":     {type:"ere", stem:"ved", aux:"avere", pp:"visto", rem:["vidi","vedesti","vide","vedemmo","vedeste","videro"], fut:["vedrò","vedrai","vedrà","vedremo","vedrete","vedranno"], cond:["vedrei","vedresti","vedrebbe","vedremmo","vedreste","vedrebbero"]},
             "vendere":    {type:"ere", stem:"vend", aux:"avere", pp:"venduto"},
             "venire":     {type:"irr"},
-            "vestirsi":   {type:"ire", stem:"vest", aux:"essere", pp:"vestito"},
+            "vestirsi":   {type:"ire-rfl", stem:"vest", aux:"essere", pp:"vestito"},
             "vestire":    {type:"ire", stem:"vest", aux:"avere", pp:"vestito"},
             "viaggiare":  {type:"iare", stem:"viaggi", aux:"avere", pp:"viaggiato"},
             "vincere":    {type:"ere", stem:"vinc", aux:"avere", pp:"vinto", rem:["vinsi","vincesti","vinse","vincemmo","vinceste","vinsero"]},
@@ -564,12 +563,13 @@
         }
         function conjVerbs(infinito, m) {
             const s = m.stem;
-            const isRfl = m.type === "are-rfl";
+            const isRfl = m.type === "are-rfl" || m.type === "ere-rfl" || m.type === "ire-rfl";
             const rules = getRules(m.type);
             if (!rules) return null;
             const auxT = (k) => AUX[m.aux][k];
             const pp = m.pp;
             const r = (arr) => isRfl ? REFL_PR.map((p,i) => p + " " + arr[i]) : arr;
+            const rflImpv = (e) => e.map((ee,i) => { if(!ee) return ""; const w = s+ee; return (i===2||i===5) ? "si "+w : w; });
             const cp = (k) => r(auxT(k).map(a => a + " " + pp));
             const end = (k, override) => {
                 if (override) return r(override);
@@ -595,7 +595,7 @@
                 "cong_trapassato": cp("cong_imp"),
                 "condizionale": end("cond", m.cond),
                 "cond_passato": cp("cond"),
-                "imperativo": end("impv", m.impv),
+                "imperativo": isRfl ? rflImpv(m.impv || rules.impv) : end("impv", m.impv),
                 "infinito": end("inf"),
                 "infinito_passato": [m.aux + " " + pp],
                 "gerundio": isRfl ? [mkStr("ger").replace(/ando$/, "andosi").replace(/endo$/, "endosi")] : end("ger"),
@@ -682,6 +682,28 @@
                     cong_imp:["issi","issi","isse","issimo","iste","issero"],
                     impv:["","isci","isca","iamo","ite","iscano"],
                     inf:"ire", ger:"endo", ppres:"ente"
+                },
+                "ere-rfl": {
+                    pres:["o","i","e","iamo","ete","ono"],
+                    imperf:["evo","evi","eva","evamo","evate","evano"],
+                    rem:["ei","esti","é","emmo","este","erono"],
+                    fut:["erò","erai","erà","eremo","erete","eranno"],
+                    cond:["erei","eresti","erebbe","eremmo","ereste","erebbero"],
+                    cong:["a","a","a","iamo","iate","ano"],
+                    cong_imp:["essi","essi","esse","essimo","este","essero"],
+                    impv:["","iti","a","iamoci","etevi","ano"],
+                    inf:"ersi", ger:"endosi", ppres:"ente"
+                },
+                "ire-rfl": {
+                    pres:["o","i","e","iamo","ite","ono"],
+                    imperf:["ivo","ivi","iva","ivamo","ivate","ivano"],
+                    rem:["ii","isti","ì","immo","iste","irono"],
+                    fut:["irò","irai","irà","iremo","irete","iranno"],
+                    cond:["irei","iresti","irebbe","iremmo","ireste","irebbero"],
+                    cong:["a","a","a","iamo","iate","ano"],
+                    cong_imp:["issi","issi","isse","issimo","iste","issero"],
+                    impv:["","iti","a","iamoci","itevi","ano"],
+                    inf:"irsi", ger:"endosi", ppres:"ente"
                 },
             };
             const t = R[type];
