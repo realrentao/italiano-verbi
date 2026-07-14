@@ -206,6 +206,7 @@
             "descrivere": {type:"ere", stem:"descriv", aux:"avere", pp:"descritto", pres:["descrivo","descrivi","descrive","descriviamo","descrivete","descrivono"], rem:["descrisi","descrivesti","descrisse","descrivemmo","descriveste","descrisero"]},
             "dire":       {type:"irr"},
             "dirigersi":   {type:"ere-rfl", stem:"dirig", aux:"essere", pp:"diretto", pres:["dirigo","dirigi","dirige","dirigiamo","dirigete","dirigono"], rem:["diressi","dirigesti","diresse","dirigemmo","dirigeste","diressero"]},
+            "dissuadere":  {type:"ere", stem:"dissuad", aux:"avere", pp:"dissuaso", rem:["dissuasi","dissuadesti","dissuase","dissuademmo","dissuadeste","dissuasero"]},
             "divertirsi": {type:"irr"}, // manually defined
 "divertire":  {type:"ire", stem:"divert", aux:"avere", pp:"divertito"},
             "dormire":    {type:"ire", stem:"dorm", aux:"avere", pp:"dormito"},
@@ -344,6 +345,7 @@
             "pulire":     {type:"ire-isc", stem:"pul", aux:"avere", pp:"pulito"},
             // P 补充
             "partecipare":{type:"are", stem:"partecip", aux:"avere", pp:"partecipato"},
+            "pedinare":   {type:"are", stem:"pedin", aux:"avere", pp:"pedinato"},
             "passeggiare":    {type:"iare", stem:"passeggi", aux:"avere", pp:"passeggiato"},
             "pesare":         {type:"are", stem:"pes", aux:"avere", pp:"pesato"},
             "piangere":       {type:"ere", stem:"piang", aux:"avere", pp:"pianto", rem:["piansi","piangesti","pianse","piangemmo","piangeste","piansero"]},
