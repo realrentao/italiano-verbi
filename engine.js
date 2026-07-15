@@ -264,6 +264,7 @@
             "impiantare":    {type:"are", stem:"impiant", aux:"avere", pp:"impiantato"},
             "indicare":     {type:"care", stem:"indic", aux:"avere", pp:"indicato"},
             "indossare":     {type:"are", stem:"indoss", aux:"avere", pp:"indossato"},
+            "infilarsi":   {type:"are-rfl", stem:"infil", aux:"essere", pp:"infilato"},
             "ingoiare":     {type:"iare", stem:"ingoi", aux:"avere", pp:"ingoiato"},
             "ingannare":    {type:"are", stem:"ingann", aux:"avere", pp:"ingannato"},
             "ingannarsi":   {type:"are-rfl", stem:"ingann", aux:"essere", pp:"ingannato"},
