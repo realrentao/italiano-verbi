@@ -1082,6 +1082,20 @@
                     // Re-render current letter's verb list if still selected
                     if (currentLetter) selectLetter(currentLetter);
                 };
+                // SAFETY NET: poll until full verb-data.js has loaded and replaced
+                // verbData (in case the __verbDataReady callback is never invoked
+                // e.g. verb-data.js forgot to call it). Guarantees the full list shows.
+                let _tries = 0;
+                const _iv = setInterval(function() {
+                    _tries++;
+                    if (typeof verbData !== 'undefined' && Object.keys(verbData).length > 1) {
+                        renderAlphaIndex();
+                        if (currentLetter) selectLetter(currentLetter);
+                        clearInterval(_iv);
+                    } else if (_tries > 40) {
+                        clearInterval(_iv);
+                    }
+                }, 250);
             } else {
                 // No critical data and no verb-data.js yet → wait for verb-data.js
                 window.__verbDataReady = init;
