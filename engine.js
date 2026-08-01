@@ -1065,46 +1065,67 @@
             }
         });
         // ==================== START ====================
-        // Progressive loading: use critical A data if available, then merge full data
-        function ready() {
-            if (typeof verbData !== 'undefined') {
-                // Full verb-data.js already loaded → render everything
-                init();
-            } else if (window.__A_CRITICAL) {
-                // Critical A-section data available → render A section immediately
-                // without waiting for the full 300KB verb-data.js download
-                verbData = {a: window.__A_CRITICAL};
-                init();
-                // When full verb-data.js loads, merge and enable all 26 letters
-                window.__verbDataReady = function() {
-                    // verbData is now overwritten by verb-data.js's var verbData = {...}
-                    // Re-enable all letter buttons with correct counts
-                    renderAlphaIndex();
-                    // Re-render current letter's verb list if still selected
-                    if (currentLetter) selectLetter(currentLetter);
-                };
-                // SAFETY NET: poll until full verb-data.js has loaded and replaced
-                // verbData (in case the __verbDataReady callback is never invoked
-                // e.g. verb-data.js forgot to call it). Guarantees the full list shows.
-                let _tries = 0;
-                const _iv = setInterval(function() {
-                    _tries++;
-                    if (typeof verbData !== 'undefined' && Object.keys(verbData).length > 1) {
-                        renderAlphaIndex();
-                        if (currentLetter) selectLetter(currentLetter);
-                        clearInterval(_iv);
-                    } else if (_tries > 40) {
-                        clearInterval(_iv);
-                    }
-                }, 250);
-            } else {
-                // No critical data and no verb-data.js yet → wait for verb-data.js
-                window.__verbDataReady = init;
+        // Progressive loading: render the critical A-section from inline data
+        // IMMEDIATELY (no waiting for the 300KB+ verb-data.js download), then load
+        // the full dataset asynchronously. This makes first paint instant.
+        function startProgressive() {
+            if (window.__A_CRITICAL) {
+                // Render A-section now without blocking on verb-data.js
+                if (typeof verbData === 'undefined') {
+                    verbData = {a: window.__A_CRITICAL};
+                }
+                init(); // hides loading spinner, renders A index, selects 'a'
+                loadFullData();
+                return;
             }
+            if (typeof verbData !== 'undefined') {
+                // Full verb-data.js already present → render everything
+                init();
+                return;
+            }
+            // No critical data and no verb-data.js yet → wait for verb-data.js
+            window.__verbDataReady = init;
         }
+
+        function loadFullData() {
+            // If full data already loaded (rare race), just rebuild and return
+            if (typeof verbData !== 'undefined' && Object.keys(verbData).length > 1) {
+                renderAlphaIndex();
+                if (currentLetter) selectLetter(currentLetter);
+                return;
+            }
+            // Dynamically inject verb-data.js so it never blocks first paint
+            const s = document.createElement('script');
+            s.src = 'verb-data.js?v=' + (window.__VERB_DATA_VERSION || '');
+            document.body.appendChild(s);
+            // verb-data.js calls window.__verbDataReady() at the end → rebuild full list
+            let _rebuilt = false;
+            window.__verbDataReady = function() {
+                if (_rebuilt) return;
+                _rebuilt = true;
+                renderAlphaIndex();
+                if (currentLetter) selectLetter(currentLetter);
+            };
+            // SAFETY NET: poll in case the callback never fires (e.g. verb-data.js
+            // forgot to call it). Guarantees the full A–Z list shows.
+            let _tries = 0;
+            const _iv = setInterval(function() {
+                if (_rebuilt) { clearInterval(_iv); return; }
+                _tries++;
+                if (typeof verbData !== 'undefined' && Object.keys(verbData).length > 1) {
+                    _rebuilt = true;
+                    renderAlphaIndex();
+                    if (currentLetter) selectLetter(currentLetter);
+                    clearInterval(_iv);
+                } else if (_tries > 40) {
+                    clearInterval(_iv);
+                }
+            }, 250);
+        }
+
         if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', ready);
+            document.addEventListener('DOMContentLoaded', startProgressive);
         } else {
-            ready();
+            startProgressive();
         }
     
