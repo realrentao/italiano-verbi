@@ -393,6 +393,7 @@
             "risolvere":  {type:"ere", stem:"risolv", aux:"avere", pp:"risolto", rem:["risolsi","risolvesti","risolse","risolvemmo","risolveste","risolsero"]},
             "rispettare": {type:"are", stem:"rispett", aux:"avere", pp:"rispettato"},
             "risultare":  {type:"are", stem:"risult", aux:"essere", pp:"risultato"},
+            "ritirare":   {type:"are", stem:"ritir", aux:"avere", pp:"ritirato"},
             "rivelare":   {type:"are", stem:"rivel", aux:"avere", pp:"rivelato"},
             "rovinare":   {type:"are", stem:"rovin", aux:"avere", pp:"rovinato"},
             "restituire": {type:"ire-isc", stem:"restitu", aux:"avere", pp:"restituito"},
