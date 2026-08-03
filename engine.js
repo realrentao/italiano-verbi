@@ -254,6 +254,7 @@
             "incontrare": {type:"are", stem:"incontr", aux:"avere", pp:"incontrato"},
             "informarsi": {type:"are-rfl", stem:"inform", aux:"essere", pp:"informato"},
             "informare":  {type:"are", stem:"inform", aux:"avere", pp:"informato"},
+            "infortunarsi":{type:"are-rfl", stem:"infortun", aux:"essere", pp:"infortunato"},
             "insegnare":  {type:"are", stem:"insegn", aux:"avere", pp:"insegnato"},
             "interessare":{type:"are", stem:"interess", aux:"avere", pp:"interessato"},
             "iscriversi":  {type:"ere-rfl", stem:"iscriv", aux:"essere", pp:"iscritto", rem:["iscrissi","iscrivesti","iscrisse","iscrivemmo","iscriveste","iscrissero"]},
