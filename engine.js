@@ -342,6 +342,7 @@
             "prepararsi": {type:"are-rfl", stem:"prepar", aux:"essere", pp:"preparato"},
 "preparare":  {type:"are", stem:"prepar", aux:"avere", pp:"preparato"},
             "presentare": {type:"are", stem:"present", aux:"avere", pp:"presentato"},
+            "presentarsi":{type:"are-rfl", stem:"present", aux:"essere", pp:"presentato"},
             "promettere": {type:"ere", stem:"promett", aux:"avere", pp:"promesso", rem:["promisi","promettesti","promise","promettemmo","prometteste","promisero"]},
             "provare":    {type:"are", stem:"prov", aux:"avere", pp:"provato"},
             "pulire":     {type:"ire-isc", stem:"pul", aux:"avere", pp:"pulito"},
