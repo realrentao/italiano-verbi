@@ -100,6 +100,7 @@
             "accennare":   {type:"are", stem:"accenn", aux:"avere", pp:"accennato"},
             "accettare":  {type:"are", stem:"accett", aux:"avere", pp:"accettato"},
             "accettarsi": {type:"are-rfl", stem:"accett", aux:"essere", pp:"accettato"},
+            "acciuffare": {type:"are", stem:"acciuff", aux:"avere", pp:"acciuffato"},
             "accogliere":   {type:"ere", stem:"accogli", aux:"avere", pp:"accolto", pres:["accolgo","accogli","accoglie","accogliamo","accogliete","accolgono"], rem:["accolsi","accogliesti","accolse","accogliemmo","accoglieste","accolsero"]},
             "accompagnare":{type:"are", stem:"accompagn", aux:"avere", pp:"accompagnato"},
             "accontentare":{type:"are", stem:"accontent", aux:"avere", pp:"accontentato"},
