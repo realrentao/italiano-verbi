@@ -1103,11 +1103,23 @@
             document.body.appendChild(s);
             // verb-data.js calls window.__verbDataReady() at the end → rebuild full list
             let _rebuilt = false;
+            function scheduleRebuild() {
+                var run = function() {
+                    renderAlphaIndex();
+                    if (currentLetter) selectLetter(currentLetter);
+                };
+                // Defer the heavy index rebuild to idle time so the main thread
+                // is never blocked right after parsing the 300KB+ dataset.
+                if (window.requestIdleCallback) {
+                    window.requestIdleCallback(run, {timeout: 300});
+                } else {
+                    setTimeout(run, 0);
+                }
+            }
             window.__verbDataReady = function() {
                 if (_rebuilt) return;
                 _rebuilt = true;
-                renderAlphaIndex();
-                if (currentLetter) selectLetter(currentLetter);
+                scheduleRebuild();
             };
             // SAFETY NET: poll in case the callback never fires (e.g. verb-data.js
             // forgot to call it). Guarantees the full A–Z list shows.
@@ -1117,8 +1129,7 @@
                 _tries++;
                 if (typeof verbData !== 'undefined' && Object.keys(verbData).length > 1) {
                     _rebuilt = true;
-                    renderAlphaIndex();
-                    if (currentLetter) selectLetter(currentLetter);
+                    scheduleRebuild();
                     clearInterval(_iv);
                 } else if (_tries > 40) {
                     clearInterval(_iv);
