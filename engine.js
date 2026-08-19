@@ -130,6 +130,7 @@
             "aprire":     {type:"ire", stem:"apr", aux:"avere", pp:"aperto", pres:["apro","apri","apre","apriamo","aprite","aprono"]},
             "arrabbiarsi":{type:"are-rfl", stem:"arrabbi", aux:"essere", pp:"arrabbiato"},
 "arrabbiare": {type:"iare", stem:"arrabbi", aux:"avere", pp:"arrabbiato"},
+            "arrampicarsi": {type:"are-rfl", stem:"arrampic", aux:"essere", pp:"arrampicato"},
             "arrivare":   {type:"are", stem:"arriv", aux:"essere", pp:"arrivato"},
             "ascoltare":  {type:"are", stem:"ascolt", aux:"avere", pp:"ascoltato"},
             "aspettare":  {type:"are", stem:"aspett", aux:"avere", pp:"aspettato"},
