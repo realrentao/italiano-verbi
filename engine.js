@@ -441,7 +441,7 @@
             "sbrigarsi":  {type:"are-rfl", stem:"sbrig", aux:"essere", pp:"sbrigato"},
             "sbrigare":   {type:"care", stem:"sbrig", aux:"avere", pp:"sbrigato"},
             "scappare":   {type:"are", stem:"scapp", aux:"essere", pp:"scappato"},
-            "sciare":     {type:"iare", stem:"sc", aux:"avere", pp:"sciato"},
+            "sciare":     {type:"iare-tonic", stem:"sc", aux:"avere", pp:"sciato"},
             "sciogliere": {type:"ere", stem:"sciogli", aux:"avere", pp:"sciolto", pres:["sciolgo","sciogli","scioglie","sciogliamo","sciogliete","sciolgono"], rem:["sciolsi","sciogliesti","sciolse","sciogliemmo","scioglieste","sciolsero"]},
             "scoppiare":  {type:"iare", stem:"scopp", aux:"essere", pp:"scoppiato"},
             "scoprire":   {type:"ire", stem:"scopr", aux:"avere", pp:"scoperto", rem:["scopersi","scopristi","scoperse","scoprimmo","scopriste","scopersero"]},
@@ -667,6 +667,17 @@
                     cong:["i","i","i","iamo","iate","iano"],
                     cong_imp:["iassi","iassi","iasse","iassimo","iaste","iassero"],
                     impv:["","iati","i","iamoci","iatevi","ino"],
+                    inf:"iare", ger:"iando", ppres:"iante"
+                },
+                "iare-tonic": {
+                    pres:["io","ii","ia","iamo","iate","iano"],
+                    imperf:["iavo","iavi","iava","iavamo","iavate","iavano"],
+                    rem:["iai","iasti","iò","iammo","iaste","iarono"],
+                    fut:["ierò","ierai","ierà","ieremo","ierete","ieranno"],
+                    cond:["ierei","ieresti","ierebbe","ieremmo","iereste","ierebbero"],
+                    cong:["ii","ii","ii","iamo","iate","iano"],
+                    cong_imp:["iassi","iassi","iasse","iassimo","iaste","iassero"],
+                    impv:["","ia","ii","iamo","iate","ino"],
                     inf:"iare", ger:"iando", ppres:"iante"
                 },
                 "ere": {
