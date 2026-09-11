@@ -148,7 +148,8 @@
             "adoperarsi": {type:"are-rfl", stem:"adoper", aux:"essere", pp:"adoperato"},
             "accontentarsi":{type:"are-rfl", stem:"accontent", aux:"essere", pp:"accontentato"},
             // B
-            "bagnarsi":   {type:"are-rfl", stem:"bagn", aux:"essere", pp:"bagnato"},
+
+    "baciare": {type:"iare", stem:"bac", aux:"avere", pp:"baciato"},            "bagnarsi":   {type:"are-rfl", stem:"bagn", aux:"essere", pp:"bagnato"},
             "bagnare":    {type:"are", stem:"bagn", aux:"avere", pp:"bagnato"},
             "ballare":    {type:"are", stem:"ball", aux:"avere", pp:"ballato"},
             "bastare":    {type:"are", stem:"bast", aux:"essere", pp:"bastato"},
