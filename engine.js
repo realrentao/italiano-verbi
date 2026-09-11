@@ -252,7 +252,8 @@
             "guidare":       {type:"are", stem:"guid", aux:"avere", pp:"guidato"},
             "gustare":       {type:"are", stem:"gust", aux:"avere", pp:"gustato"},
             // I
-            "imparare":   {type:"are", stem:"impar", aux:"avere", pp:"imparato"},
+
+    "incominciare": {type:"iare", stem:"incominc", aux:"avere", pp:"incominciato"},            "imparare":   {type:"are", stem:"impar", aux:"avere", pp:"imparato"},
             "incontrare": {type:"are", stem:"incontr", aux:"avere", pp:"incontrato"},
             "informarsi": {type:"are-rfl", stem:"inform", aux:"essere", pp:"informato"},
             "informare":  {type:"are", stem:"inform", aux:"avere", pp:"informato"},
