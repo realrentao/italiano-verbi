@@ -165,7 +165,7 @@
             "cercare":    {type:"care", stem:"cerc", aux:"avere", pp:"cercato"},
             "chiamare":   {type:"are", stem:"chiam", aux:"avere", pp:"chiamato"},
             "chiudere":   {type:"ere", stem:"chiud", aux:"avere", pp:"chiuso", rem:["chiusi","chiudesti","chiuse","chiudemmo","chiudeste","chiusero"]},
-            "cominciare": {type:"iare", stem:"cominc", aux:"essere", pp:"cominciato"},
+            "cominciare": {type:"iare", stem:"cominc", aux:"avere", pp:"cominciato"},
             "comprare":   {type:"are", stem:"compr", aux:"avere", pp:"comprato"},
             "conoscere":  {type:"ere", stem:"conosc", aux:"avere", pp:"conosciuto", pres:["conosco","conosci","conosce","conosciamo","conoscete","conoscono"]},
             "correre":    {type:"ere", stem:"corr", aux:"essere", pp:"corso", rem:["corsi","corresti","corse","corremmo","correste","corsero"]},
