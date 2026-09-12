@@ -202,6 +202,7 @@
             "cosatare":   {type:"are", stem:"cosat", aux:"avere", pp:"cosatato"},
             // D
 
+    "diventare": {type:"are", stem:"divent", aux:"essere", pp:"diventato"},
     "dimenticare": {type:"are", stem:"dimentic", aux:"avere", pp:"dimenticato"},
     "dimenticarsi": {type:"are-rfl", stem:"dimentic", aux:"essere", pp:"dimenticato"},
     "dirige":     {type:"ere", stem:"dirig", aux:"avere", pp:"diretto", pres:["dirigo","dirigi","dirige","dirigiamo","dirigete","dirigono"]},            "dare":       {type:"irr"},
